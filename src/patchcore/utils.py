@@ -60,8 +60,8 @@ def plot_segmentation_images(
                     mask = mask.numpy()
             else:
                 mask = np.zeros_like(image)
-
-        savename = image_path.split("/")
+        savename = image_path.split("\\")
+        #savename = image_path.split("/")
         savename = "_".join(savename[-save_depth:])
         savename = os.path.join(savefolder, savename)
         f, axes = plt.subplots(1, 2 + int(masks_provided))
