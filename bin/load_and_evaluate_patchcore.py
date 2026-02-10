@@ -226,7 +226,7 @@ def patch_core_loader(patch_core_paths, faiss_on_gpu, faiss_num_workers):
                         load_path=patch_core_path,
                         device=device,
                         nn_method=nn_method,
-                        prepend="Ensemble-{}-{}_".format(i + 1, n_patchcores),
+                        #prepend="Ensemble-{}-{}_".format(i + 1, n_patchcores),
                     )
                     loaded_patchcores.append(patchcore_instance)
 
